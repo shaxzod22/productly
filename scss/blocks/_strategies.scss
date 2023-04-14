@@ -1,0 +1,104 @@
+@use './../variables';
+@use './../mixins';
+
+.strategies{
+    padding-top: 15px;
+    padding-bottom: 48px;
+    &__wrapper{
+        @include mixins.df(column);
+    }
+    
+    &__heading{
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 46px;
+        color: variables.$primary-color;
+        margin-bottom: 14px;
+    }
+    
+    &__text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: variables.$secondary-color;
+        
+    }
+    
+    &__list__ctg{
+        @include mixins.df($align:center);
+        gap: 7px;
+        padding: 24px 0;
+    }
+    
+    &__ctg__link{
+        padding: 6px 14px;
+        @include mixins.df($align:center);
+        justify-content: center;
+        min-width: 43px;
+        height: 28px;
+        border-radius: 90px;
+        border: 1px solid #D7D7D7;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 28px;
+        color: variables.$secondary-color;
+    }
+    
+    &__ctg__link--primary{
+        background-color: variables.$third-color;
+        color: variables.$fourth-color;
+    }
+    
+    &__list{
+        @include mixins.df($align:center);
+        justify-content: space-between;
+        gap: 30px 0;
+        flex-wrap: wrap;
+        padding-top: 7px;
+    }
+    
+    &__item{
+        max-width: 377px;
+        cursor: pointer;
+        
+        &:hover{
+            h4{
+                color: variables.$third-color;
+            }
+        }
+        
+        &__img{
+            width: 377px;
+            height: 200px;
+            margin-bottom: 24px;
+        }
+        
+        &:nth-child(4){
+            max-width: 787px;
+        }
+    }
+    
+    &__item:nth-child(4){
+        .strategies__item__holder{
+            max-width: 785px;
+        }
+        
+        .strategies__item__img{
+            width: 787px;
+            height: 200px;
+        }
+    }
+    
+    &__item__holder{
+        padding: 24px 33px 26px;
+        max-width: 376px;
+    }
+    
+    &__inner__heading{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+        color: variables.$primary-color;
+        padding-bottom: 5px;
+    }
+}

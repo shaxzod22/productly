@@ -1,0 +1,82 @@
+@use './../variables';
+@use './../mixins';
+
+// header
+.btn{
+    @include mixins.button(variables.$third-color,4px)
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    background-color: variables.$fourth-color;
+    padding-bottom: 15px;
+    
+    &__wrapper{
+        @include mixins.df($align:center);
+    }
+    
+    &__logo__link{
+        margin-right: 216px;
+    }
+    
+    &__logo__img{
+        width: 190px;
+        height: 31px;
+    }
+    
+    &__navbar{
+        margin-right: 255px;
+    }
+    
+    &__list{
+        @include mixins.df($align:center);
+        gap: 17px;
+    }
+    
+    &__item__link{
+        display: inline-block;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        color: variables.$primary-color;
+        padding: 25px 0;
+        
+        &:hover{
+            color: variables.$third-color;
+        }
+        
+        &:active{
+            transform: scale(1.1);
+        }
+    }
+    
+    &__btns{
+        @include mixins.df($align:center);
+        gap: 14px;
+    }
+    
+    &__btn__in{
+        width: 104px;
+        height: 46px;
+        border: 1px solid #BCD0E5;
+        background-color:variables.$fourth-color;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: variables.$other-color;
+    }
+    
+    &__btn__up{
+        width: 113px;
+        height: 46px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: variables.$fourth-color;
+    }
+}
+

@@ -1,0 +1,66 @@
+@use './../variables';
+@use './../mixins';
+.input{
+    border: none;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 9px 21px;
+}
+
+.contact{
+    padding-top: 50px;
+    
+    &__container{
+        max-width: 1440px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    &__wrapper{
+        @include mixins.df($align:center);
+        justify-content: space-between;
+        padding: 62px 122px 82px;
+        background-color: #FFEEE1;
+    }
+    
+    &__left-box{
+        max-width: 528px;
+    }
+    
+    &__heading{
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 46px;
+        margin-bottom: 17px;
+        color: variables.$primary-color;
+    }
+    
+    &__text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 33px;
+        color: variables.$secondary-color;
+    }
+    
+    &__tel-box{
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 26px;
+        margin-bottom: 19px;
+        color: variables.$secondary-color;
+    }
+    
+    &__tel__img{
+        width: 25px;
+        height: 25px;
+        margin-right: 11px;
+    }
+    
+    &__form{
+        max-width: 577px;
+        @include mixins.df($align:center);
+        flex-wrap: wrap
+    }
+    
+}
