@@ -5,6 +5,8 @@
     background: #FFFFFF;
     border-radius: 5px;
     padding: 9px 21px;
+    outline: none;
+    display: inline-block;
 }
 
 .contact{
@@ -17,10 +19,11 @@
     }
     
     &__wrapper{
-        @include mixins.df($align:center);
-        justify-content: space-between;
-        padding: 62px 122px 82px;
+        @include mixins.df();
+        gap: 32px;
+        padding: 62px 80px 82px;
         background-color: #FFEEE1;
+        max-width: 100%;
     }
     
     &__left-box{
@@ -59,8 +62,25 @@
     
     &__form{
         max-width: 577px;
-        @include mixins.df($align:center);
-        flex-wrap: wrap
+        @include mixins.df();
+        flex-wrap: wrap;
+        gap: 18px 16px;
+        padding-top: 62px;
+    }
+    
+    &__form__opinion{
+        padding-bottom: 124px;
+        width:100% ;
+    }
+    
+    &__btn{
+        width: 117px;
+        height: 53px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: variables.$fourth-color;
     }
     
 }

@@ -1,53 +1,58 @@
-/* open-sans-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
+.footer__container {
+  max-width: 1440px;
+  padding-right: 0;
+  padding-left: 0;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: falce;
+  align-items: falce;
+  flex-direction: falce;
+  align-items: falce;
+  padding: 58px 0 72px 100px;
+}
+.footer__logo__link {
+  margin-right: 151px;
+}
+.footer__logo__img {
+  width: 198px;
+  height: 31px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: falce;
+  align-items: center;
+  flex-direction: falce;
+  align-items: center;
+  gap: 140px;
+}
+.footer__item {
+  max-width: 142px;
+}
+.footer__heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: #2F281E;
+}
+.footer__inner__list {
+  display: flex;
+  flex-direction: column;
+  align-items: falce;
+  flex-direction: column;
+  align-items: falce;
+}
+.footer__inner__item {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v34-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-size: 16px;
+  line-height: 35px;
+  cursor: pointer;
 }
-/* open-sans-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/open-sans-v34-latin-600.woff2") format("woff2"), url("../fonts/open-sans-v34-latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* open-sans-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/open-sans-v34-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v34-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v20-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"), url("../fonts/poppins-v20-latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), url("../fonts/poppins-v20-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-.footer {
-  height: 100px;
+.footer__inner__item:hover {
+  color: #FF9900;
 }
 
 .btn {
@@ -438,6 +443,8 @@
   background: #FFFFFF;
   border-radius: 5px;
   padding: 9px 21px;
+  outline: none;
+  display: inline-block;
 }
 
 .contact {
@@ -451,12 +458,13 @@
 .contact__wrapper {
   display: flex;
   flex-direction: falce;
-  align-items: center;
+  align-items: falce;
   flex-direction: falce;
-  align-items: center;
-  justify-content: space-between;
-  padding: 62px 122px 82px;
+  align-items: falce;
+  gap: 32px;
+  padding: 62px 80px 82px;
   background-color: #FFEEE1;
+  max-width: 100%;
 }
 .contact__left-box {
   max-width: 528px;
@@ -491,10 +499,25 @@
   max-width: 577px;
   display: flex;
   flex-direction: falce;
-  align-items: center;
+  align-items: falce;
   flex-direction: falce;
-  align-items: center;
+  align-items: falce;
   flex-wrap: wrap;
+  gap: 18px 16px;
+  padding-top: 62px;
+}
+.contact__form__opinion {
+  padding-bottom: 124px;
+  width: 100%;
+}
+.contact__btn {
+  width: 117px;
+  height: 53px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -847,6 +870,55 @@ body {
 
 .hero {
   flex-grow: 1;
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v34-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v34-latin-600.woff2") format("woff2"), url("../fonts/open-sans-v34-latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v34-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v34-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v20-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"), url("../fonts/poppins-v20-latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), url("../fonts/poppins-v20-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /*# sourceMappingURL=main.css.map */

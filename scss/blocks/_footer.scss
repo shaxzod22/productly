@@ -1,7 +1,59 @@
 @use './../variables';
 @use './../mixins';
-@use './../fonts';
+
 
 .footer{
-    height: 100px;
+    &__container{
+        max-width: 1440px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    &__wrapper{
+        @include mixins.df();
+        padding: 58px 0 72px 100px;
+    }
+    
+    &__logo__link{
+        margin-right: 151px;
+    }
+    
+    &__logo__img{
+        width: 198px;
+        height: 31px;
+    }
+    
+    &__list{
+        @include mixins.df($align:center);
+        gap: 140px;
+    }
+    
+    &__item{
+        max-width: 142px;
+    }
+    
+    &__heading{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 15px;
+        color: variables.$primary-color;
+    }
+    
+    &__inner__list{
+        @include mixins.df(column);
+    }
+    
+    &__inner__item{
+        font-family: 'Poppins',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 35px;
+        cursor: pointer;
+        
+        &:hover{
+            color: variables.$third-color;
+        }
+    }
 }
